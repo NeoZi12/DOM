@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .highlight { background-color: yellow;} 
+        .underline { text-decoration: underline;}
+        .bold { font-weight: bold;}
+        .hidden { display: none;}
+        .clicked { pointer-events: none; background-color: grey;}
+    </style>
+</head>
+<body>
+    <h1>DOM#1</h1>
+    <h2>Task 1</h2>
+    <p id="text" class="">This is a sample paragraph.</p>
+    <input type="text" id="classInput" placeholder="Enter class name">
+    <button onclick="addClass()">Add Class</button>
+
+    <h2>Task 2</h2>
+    <section>
+    <p id="text1" class="">This is the first paragraph.</p>
+    <p id="text2" class="">This is the second paragraph.</p>
+    <p id="text3" class="">This is the third paragraph.</p>
+  
+    <button onclick="ToggleVisibility1()">Toggle First Paragraph</button>
+    <button onclick="ToggleVisibility2()">Toggle Second Paragraph</button>
+    <button onclick="ToggleVisibility3()">Toggle Third Paragraph</button>
+    </section>
+
+    <h2>Task 3</h2>
+    <section>
+        <button id="btn" onclick="clicked()">Click me</button>
+    </section>
+    
+<script src="js.js"></script>
+</body>
+</html>
